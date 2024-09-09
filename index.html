@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Nike Colombia</title>
+    <title>Carousel Template · Bootstrap v5.3</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
     
 
@@ -97,7 +97,9 @@
     </style>
 
     
-    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -151,190 +153,165 @@
     </div>
 
     
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10"/>
-    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
-  </symbol>
-  <symbol id="cart" viewBox="0 0 16 16">
-    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-  </symbol>
-  <symbol id="chevron-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-  </symbol>
-</svg>
-
-<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
-  <div class="container">
-    <a class="navbar-brand d-md-none" href="#">
-      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
-      Aperture
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav flex-grow-1 justify-content-between">
-          <li class="nav-item"><a class="nav-link" href="#">
-            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
-          </a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Regístrate</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Buscar tienda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">accesorios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">ayudad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">lanzamiento</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">
-            <svg class="bi" width="24" height="24"><use xlink:href="#cart"/></svg>
-          </a></li>
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Carousel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </div>
-</nav>
-
-<img src="imajenes/Nike-emblema.jpg" width="2220" height="550">
+  </nav>
+</header>
 
 <main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-3 fw-bold">Sé el primero</h1>
-      <h3 class="fw-normal text-muted mb-3">Inscríbete para recibir correos electrónicos de Athletic Sport, partner oficial de Nike en Colombia y ser el primero en ver contenido inspirador, noticias y ofertas exclusivas.
 
-      </h3>
-    NOMBRES*
-      <input type="text" class="form-control" name="nombre" placeholder="escribe tus nombre" required>
-       <br>
-       APELLIDOS* 
-       <input type="text" class="form-control" name="nombre" placeholder="escribe tus apellidos" required>
-       <br> 
-       CORREO ELECTRONICO*
-       <input type="email" class="form-control" placeholder="escribe tu correo electronico"  name="documento" required>
-       <br>
-       TELEFONO*
-       <input type="tel" class="form-control" name="celulae" placeholder="escribe tu telefono" required> 
-       <br>
-       fecha de nacimiento 
-       <input type="date" class="form-control" name="fechadenacimiento" required>
-       <br>
-       <input type="submit" class="form-control" value="guardar" required>
-       <br>
-
-       <img src="imajenes/logo_nike_principal.jpg" width="200" height="200">
-      
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">regalos unicos</h2>
-        <p class="lead">el amor esta en esos pares de  tenis que quieres</p>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
       </div>
-      
-    <img src="imajenes/0471bd61-6df5-4fff-8343-14be1c022a97___c1186caac0cea0d552cd0ad3b27f7ba0.webp" width="750" alt="">
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
     </div>
 
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Corre, entrena, juega</h2>
-        <p class="lead">Cuando nadie puede atraparte...
-        </p>
-      </div>
-      <img src="imajenes/embape.webp"  width="550" >
-    </div>
-  </div>
+    <hr class="featurette-divider">
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Explora lo mejor de Nike</h2>
-        <p class="lead">calidad,comodidad
-          LO MEJOR NIKE
-        </p>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
       </div>
-      <img src="imajenes/caminar.webp" width="550" alt="">
-    </div>
-    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">mujeres</h2>
-        <p class="lead">comodidad</p>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
       </div>
-     <img src="imajenes/mujer.webp" width="550" alt="">
     </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">hombres</h2>
-        <p class="lead">elegansia</p>
-      </div>
-     <img src="imajenes/hombre.webp" width="550" alt="">
-    </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">niños</h2>
-        <p class="lead">ternura</p>
-      </div>
-     <img src="imajenes/niños.webp" width="550" alt="">
-    </div>
-  </div>
+    <hr class="featurette-divider">
 
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      <small class="d-block mb-3 text-body-secondary">&copy; 2017–2024</small>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      </div>
     </div>
-    <div class="col-6 col-md">
-      <h5>Destacados</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary text-decoration-none" href="#">Air Max 270></a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">Jordan 1</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">Air Force 1</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">Air Max 90</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">Jordan</a></li>
-        
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Calzado</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary text-decoration-none" href="#">todo el calzado</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">calzado jordan</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">calzado correr</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">calzado de basquetbol</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Ropa</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary text-decoration-none" href="#">toda la ropa</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">prendas para la parte supererior</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">short</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">sudaderas</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>niños</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary text-decoration-none" href="#">calzado para bebe e infantil</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">calzado para niños</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">calzado casual</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">calzado de basquetbol</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
